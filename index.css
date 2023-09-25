@@ -1,0 +1,299 @@
+
+/* Body style with animated background */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #fbff00, #d80808);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Icon animation */
+@keyframes iconAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container style */
+.animated-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  color: #020000;
+  background: transparent;
+  position: relative;
+}
+
+/* Heading style */
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Input and Button style */
+input[type="text"],
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  outline: none;
+}
+
+input[type="text"] {
+  background-color: rgb(255, 123, 0);
+  color: #000000;
+}
+
+button {
+  background-color: #fc8702;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+/* Table style */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+th {
+  background-color: #fc8702;
+  color: #000000;
+}
+
+td {
+  background-color: rgba(255, 153, 0, 0.822);
+  color: #fc0000;
+}
+
+/* Weather icon style */
+img {
+  display: block;
+  margin: 0 auto;
+  /* animation: iconAnimation 2s linear infinite; */
+}
+
+
+
+/* ---------------------------------------------------------Style num 2------------------------------------------------------------- *\
+
+
+Body style with animated background
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #00b4db, #0083b0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Container style */
+  /* .animated-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    color: #fff;
+  } */
+  
+  /* Heading style */
+  /* h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  } */
+  
+  /* Input and Button style */
+  /* input[type="text"],
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+  }
+  
+  input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+  }
+  
+  button {
+    background-color: #00b4db;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0083b0;
+  } */
+  
+  /* Table style */
+  /* table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+  
+  th {
+    background-color: #00b4db;
+    color: #fff;
+  }
+  
+  td {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+  } */
+  
+  /* Weather icon style */
+  /* img {
+    display: block;
+    margin: 0 auto;
+  } */
+  
+/* ---------------------------------------------------------Style num 1------------------------------------------------------------- *\
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animateBackground 20s linear infinite;
+    background: linear-gradient(45deg, #fd0000, #fbff00);
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400% 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+th {
+    background-color: #ff4545;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Optional: You can add media queries to make the table responsive on smaller screens */
+/*@media screen and (max-width: 768px) {
+    th, td {
+        font-size: 14px;
+    }
+} */
